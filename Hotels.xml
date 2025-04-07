@@ -1,1 +1,201 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	
+	<!--
+	1) Example from assignment instructions 
+       - Has 'Rating' attribute on Hotel 
+       - Two Phone entries 
+       - 'NearestAirport' attribute on Address
+	-->
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>11</Number>
+			<Street>E.7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	
+	<!--
+	2) Hyatt Regency Phoenix
+		- Has "Rating" Attribute
+		- Single Phone
+		- Has "Nearest Airport" attribute
+		-->
+	<Hotel Rating="3.8">
+		<Name>Hyatt Regency Phoenix</Name>
+		<Phone>602-252-1234</Phone>
+		<Address NearestAirport="Phoenix Sky Harbor">
+			<Number>122</Number>
+			<Street>N 2nd St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    3) Marriott Glendale 
+       - Omit 'Rating' attribute
+       - Multiple Phone numbers 
+       - Has 'NearestAirport' attribute 
+  -->
+	<Hotel>
+		<Name>Marriott Glendale</Name>
+		<Phone>623-555-7890</Phone>
+		<Phone>623-555-7891</Phone>
+		<Address NearestAirport="Phoenix Deer Valley">
+			<Number>12345</Number>
+			<Street>W Glendale Ave</Street>
+			<City>Glendale</City>
+			<State>AZ</State>
+			<Zip>85301</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    4) Hilton Los Angeles 
+       - Has 'Rating' 
+       - Has 'NearestAirport' 
+       - Single Phone 
+  -->
+	<Hotel Rating="4.5">
+		<Name>Hilton Los Angeles</Name>
+		<Phone>213-555-1122</Phone>
+		<Address NearestAirport="Los Angeles Intl">
+			<Number>999</Number>
+			<Street>Main St</Street>
+			<City>Los Angeles</City>
+			<State>CA</State>
+			<Zip>90001</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    5) Four Seasons NYC 
+       - Omit 'Rating' 
+       - Omit 'NearestAirport' 
+  -->
+	<Hotel>
+		<Name>Four Seasons NYC</Name>
+		<Phone>212-555-1234</Phone>
+		<Address>
+			<Number>57</Number>
+			<Street>E 57th St</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10019</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    6) Omni Dallas 
+       - Has 'Rating' 
+       - Omit 'NearestAirport' 
+  -->
+	<Hotel Rating="4.1">
+		<Name>Omni Dallas</Name>
+		<Phone>214-555-9000</Phone>
+		<Address>
+			<Number>555</Number>
+			<Street>S Lamar St</Street>
+			<City>Dallas</City>
+			<State>TX</State>
+			<Zip>75202</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    7) The Ritz-Carlton Chicago 
+       - Has 'Rating' 
+       - Has 'NearestAirport' 
+  -->
+	<Hotel Rating="4.7">
+		<Name>The Ritz-Carlton Chicago</Name>
+		<Phone>312-555-4433</Phone>
+		<Address NearestAirport="O'Hare Intl">
+			<Number>160</Number>
+			<Street>E Pearson St</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60611</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    8) Kimpton Hotel Palomar Philadelphia 
+       - Omit 'Rating' 
+       - Has 'NearestAirport' 
+  -->
+	<Hotel>
+		<Name>Kimpton Hotel Palomar Philadelphia</Name>
+		<Phone>215-555-7654</Phone>
+		<Address NearestAirport="Philadelphia Intl">
+			<Number>117</Number>
+			<Street>S 17th St</Street>
+			<City>Philadelphia</City>
+			<State>PA</State>
+			<Zip>19103</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    9) Holiday Inn Express Boston 
+       - Has 'Rating' 
+       - Omit 'NearestAirport' 
+  -->
+	<Hotel Rating="3.2">
+		<Name>Holiday Inn Express Boston</Name>
+		<Phone>617-555-4567</Phone>
+		<Address>
+			<Number>69</Number>
+			<Street>Boston St</Street>
+			<City>Boston</City>
+			<State>MA</State>
+			<Zip>02125</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    10) Courtyard by Marriott Seattle 
+        - Has 'Rating' 
+        - Multiple Phone 
+        - Has 'NearestAirport' 
+  -->
+	<Hotel Rating="4.3">
+		<Name>Courtyard by Marriott Seattle</Name>
+		<Phone>206-555-9898</Phone>
+		<Phone>206-555-9899</Phone>
+		<Address NearestAirport="Seattle Tacoma Intl">
+			<Number>612</Number>
+			<Street>Pike St</Street>
+			<City>Seattle</City>
+			<State>WA</State>
+			<Zip>98101</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 
+    11) An extra example to exceed the "at least ten" requirement 
+        - Vary the pattern again
+  -->
+	<Hotel Rating="3.9">
+		<Name>Embassy Suites San Diego</Name>
+		<Phone>619-555-0000</Phone>
+		<Address NearestAirport="San Diego Intl">
+			<Number>601</Number>
+			<Street>Pacific Hwy</Street>
+			<City>San Diego</City>
+			<State>CA</State>
+			<Zip>92101</Zip>
+		</Address>
+	</Hotel>
+	
+</Hotels>
