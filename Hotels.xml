@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Hotels
 	
-	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	
 	<!--
 	1) Example from assignment instructions 
@@ -81,8 +81,8 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     5) Four Seasons NYC 
        - Omit 'Rating' 
-       - Omit 'NearstAirport' 
-  -->
+	- Has "Nearest Airport" attribute
+	-->
 	<Hotel>
 		<Name>Four Seasons NYC</Name>
 		<Phone>212-555-1234</Phone>
@@ -98,7 +98,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     6) Omni Dallas 
        - Has 'Rating' 
-       - Omit 'NearstAirport' 
+	- Has "Nearest Airport" attribute
   -->
 	<Hotel Rating="4.1">
 		<Name>Omni Dallas</Name>
@@ -149,7 +149,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     9) Holiday Inn Express Boston 
        - Has 'Rating' 
-       - Omit 'NearstAirport' 
+	- Has "Nearest Airport" attribute
   -->
 	<Hotel Rating="3.2">
 		<Name>Holiday Inn Express Boston</Name>
@@ -184,7 +184,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
 	<!-- 
     11) An extra example to exceed the "at least ten" requirement 
-        - Vary the pattern again
+        
   -->
 	<Hotel Rating="3.9">
 		<Name>Embassy Suites San Diego</Name>
