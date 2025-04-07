@@ -16,7 +16,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 		<Phone>800-937-8461</Phone>
 		<Address NearstAirport="Sky Harbor">
 			<Number>11</Number>
-			<Street>E.7th St</Street>
+			<Street>E 7th St</Street>
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85281</Zip>
@@ -86,7 +86,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<Hotel>
 		<Name>Four Seasons NYC</Name>
 		<Phone>212-555-1234</Phone>
-		<Address>
+		<Address NearstAirport="Los Angeles Intl">
 			<Number>57</Number>
 			<Street>E 57th St</Street>
 			<City>New York</City>
@@ -103,7 +103,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<Hotel Rating="4.1">
 		<Name>Omni Dallas</Name>
 		<Phone>214-555-9000</Phone>
-		<Address>
+		<Address NearstAirport="Los Angeles Intl">
 			<Number>555</Number>
 			<Street>S Lamar St</Street>
 			<City>Dallas</City>
@@ -154,7 +154,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<Hotel Rating="3.2">
 		<Name>Holiday Inn Express Boston</Name>
 		<Phone>617-555-4567</Phone>
-		<Address>
+		<Address NearstAirport="Los Angeles Intl">
 			<Number>69</Number>
 			<Street>Boston St</Street>
 			<City>Boston</City>
