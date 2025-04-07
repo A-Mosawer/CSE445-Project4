@@ -1,1 +1,65 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  HotelsErrors.xml
+  This file intentionally contains 5 distinct schema errors:
+
+  1) The root element is <Hotel> instead of <Hotels>.
+  2) A required attribute is missing (we omit "Rating" on the third <Hotel>).
+  3) A <Phone> element is missing on the second <Hotel>.
+  4) The <Address> element in the first <Hotel> has no closing tag.
+  5) Two <Name> elements appear in the second <Hotel> (only one <Name> allowed).
+-->
+<Hotel>
+	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	
+	<!-- ERROR #1: should be <Hotels>, not <Hotel>. -->
+
+	<!-- First Hotel entry -->
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>11</Number>
+			<Street>E.7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+			<!-- ERROR #4: Missing the closing </Address> tag here. -->
+		</Hotel>
+
+	<!-- Second Hotel entry -->
+	<Hotel Rating="3.8">
+		<!-- ERROR #5: There should only be one <Name>, but here we have two. -->
+		<Name>Hyatt Regency Phoenix</Name>
+		<Name>Duplicate Hotel Name</Name>
+
+		<!-- ERROR #3: <Phone> element is completely missing. 
+         The schema expects at least one <Phone>, but here we have none. -->
+
+		<Address NearestAirport="Phoenix Sky Harbor">
+			<Number>122</Number>
+			<Street>N 2nd St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Third Hotel entry -->
+	<Hotel>
+		<!-- ERROR #2: "Rating" attribute is missing. -->
+		<Name>Marriott Glendale</Name>
+		<Phone>623-555-7890</Phone>
+		<Address NearestAirport="Phoenix Deer Valley">
+			<Number>12345</Number>
+			<Street>W Glendale Ave</Street>
+			<City>Glendale</City>
+			<State>AZ</State>
+			<Zip>85301</Zip>
+		</Address>
+	</Hotel>
+
+</Hotel>
