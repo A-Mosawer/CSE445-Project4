@@ -8,13 +8,13 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	1) Example from assignment instructions 
        - Has 'Rating' attribute on Hotel 
        - Two Phone entries 
-       - 'NearestAirport' attribute on Address
+       - 'NearstAirport' attribute on Address
 	-->
 	<Hotel Rating="4.2">
 		<Name>Westin</Name>
 		<Phone>480-968-8885</Phone>
 		<Phone>800-937-8461</Phone>
-		<Address NearestAirport="Sky Habor">
+		<Address NearstAirport="Sky Habor">
 			<Number>11</Number>
 			<Street>E.7th St</Street>
 			<City>Tempe</City>
@@ -32,7 +32,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<Hotel Rating="3.8">
 		<Name>Hyatt Regency Phoenix</Name>
 		<Phone>602-252-1234</Phone>
-		<Address NearestAirport="Phoenix Sky Harbor">
+		<Address NearstAirport="Phoenix Sky Harbor">
 			<Number>122</Number>
 			<Street>N 2nd St</Street>
 			<City>Phoenix</City>
@@ -45,13 +45,13 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
     3) Marriott Glendale 
        - Omit 'Rating' attribute
        - Multiple Phone numbers 
-       - Has 'NearestAirport' attribute 
+       - Has 'NearstAirport' attribute 
   -->
 	<Hotel>
 		<Name>Marriott Glendale</Name>
 		<Phone>623-555-7890</Phone>
 		<Phone>623-555-7891</Phone>
-		<Address NearestAirport="Phoenix Deer Valley">
+		<Address NearstAirport="Phoenix Deer Valley">
 			<Number>12345</Number>
 			<Street>W Glendale Ave</Street>
 			<City>Glendale</City>
@@ -63,13 +63,13 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     4) Hilton Los Angeles 
        - Has 'Rating' 
-       - Has 'NearestAirport' 
+       - Has 'NearstAirport' 
        - Single Phone 
   -->
 	<Hotel Rating="4.5">
 		<Name>Hilton Los Angeles</Name>
 		<Phone>213-555-1122</Phone>
-		<Address NearestAirport="Los Angeles Intl">
+		<Address NearstAirport="Los Angeles Intl">
 			<Number>999</Number>
 			<Street>Main St</Street>
 			<City>Los Angeles</City>
@@ -81,7 +81,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     5) Four Seasons NYC 
        - Omit 'Rating' 
-       - Omit 'NearestAirport' 
+       - Omit 'NearstAirport' 
   -->
 	<Hotel>
 		<Name>Four Seasons NYC</Name>
@@ -98,7 +98,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     6) Omni Dallas 
        - Has 'Rating' 
-       - Omit 'NearestAirport' 
+       - Omit 'NearstAirport' 
   -->
 	<Hotel Rating="4.1">
 		<Name>Omni Dallas</Name>
@@ -115,12 +115,12 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     7) The Ritz-Carlton Chicago 
        - Has 'Rating' 
-       - Has 'NearestAirport' 
+       - Has 'NearstAirport' 
   -->
 	<Hotel Rating="4.7">
 		<Name>The Ritz-Carlton Chicago</Name>
 		<Phone>312-555-4433</Phone>
-		<Address NearestAirport="O'Hare Intl">
+		<Address NearstAirport="O'Hare Intl">
 			<Number>160</Number>
 			<Street>E Pearson St</Street>
 			<City>Chicago</City>
@@ -132,12 +132,12 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     8) Kimpton Hotel Palomar Philadelphia 
        - Omit 'Rating' 
-       - Has 'NearestAirport' 
+       - Has 'NearstAirport' 
   -->
 	<Hotel>
 		<Name>Kimpton Hotel Palomar Philadelphia</Name>
 		<Phone>215-555-7654</Phone>
-		<Address NearestAirport="Philadelphia Intl">
+		<Address NearstAirport="Philadelphia Intl">
 			<Number>117</Number>
 			<Street>S 17th St</Street>
 			<City>Philadelphia</City>
@@ -149,7 +149,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- 
     9) Holiday Inn Express Boston 
        - Has 'Rating' 
-       - Omit 'NearestAirport' 
+       - Omit 'NearstAirport' 
   -->
 	<Hotel Rating="3.2">
 		<Name>Holiday Inn Express Boston</Name>
@@ -167,13 +167,13 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
     10) Courtyard by Marriott Seattle 
         - Has 'Rating' 
         - Multiple Phone 
-        - Has 'NearestAirport' 
+        - Has 'NearstAirport' 
   -->
 	<Hotel Rating="4.3">
 		<Name>Courtyard by Marriott Seattle</Name>
 		<Phone>206-555-9898</Phone>
 		<Phone>206-555-9899</Phone>
-		<Address NearestAirport="Seattle Tacoma Intl">
+		<Address NearstAirport="Seattle Tacoma Intl">
 			<Number>612</Number>
 			<Street>Pike St</Street>
 			<City>Seattle</City>
@@ -189,7 +189,7 @@ xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<Hotel Rating="3.9">
 		<Name>Embassy Suites San Diego</Name>
 		<Phone>619-555-0000</Phone>
-		<Address NearestAirport="San Diego Intl">
+		<Address NearstAirport="San Diego Intl">
 			<Number>601</Number>
 			<Street>Pacific Hwy</Street>
 			<City>San Diego</City>
