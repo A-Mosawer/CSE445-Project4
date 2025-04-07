@@ -11,8 +11,6 @@
 -->
 <Hotel>
 	
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	
 	<!-- ERROR #1: should be <Hotels>, not <Hotel>. -->
 
