@@ -1,8 +1,64 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
     elementFormDefault="qualified"
     xmlns="http://tempuri.org/XMLSchema.xsd"
     xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
+	<!-- 
+	    Root-Level element: "Hotels"
+		This will contain one or more "Hotel" elements.
+		-->
+	<xs:element name="Hotels">
+		<xs:complexType>
+			<xs:sequence>
+				<!--
+					"Hotels" can appear multiple times as each "Hotel" is one entry in the directory
+				-->
+				<xs:element name ="Hotel" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<!--
+							"Name" is required single element
+							-->
+							<xs:element name ="Name" type="xs:string"	/>
+
+							<!--
+							"Phone" can appear one more times
+							each phone entry is a seperate string
+							-->
+							<xs:element name="Phone" minOccurs="1" maxOccurs="unbounded" type="xs:string" />
+
+							<!--
+							"Address" must appear exactly once
+							it holds "Number" "Street" "City" "State" "Zip" subelements
+							Plus an optional "NearestAirport" attribute-->
+							
+							<xs:element name ="Address">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Number" type="xs:string" />
+										<xs:element name="Street" type="xs:string" />
+										<xs:element name="City" type="xs:string" />
+										<xs:element name="State" type="xs:string" />
+										<xs:element name="Zip" type="xs:string" />
+									</xs:sequence>
+
+									<!--
+											optional attribute for Address (Nearest Airport)
+											-->
+									<xs:attribute name ="NearestAirport" type="xs:string" use="optional" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						
+						<!--
+						"Rating" is optional attribute
+						-->
+						<xs:attribute name="Rating" type="xs:decimal" use="optional" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>
