@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Hotels
 	
-	 xmlns="http://tempuri.org/XMLSchema.xsd"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://tempuri.org/XMLSchema.xsd Hotels.xsd">
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	
 	<!--
 	1) Example from assignment instructions 
